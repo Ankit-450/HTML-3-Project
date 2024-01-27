@@ -1,68 +1,49 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
-
-.navbar {
-  padding: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: blueviolet;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.icon {
-  display: flex;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: red;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
+  display: flex;
+  z-index: 99;
 }
 .logo {
-  color: rgb(9, 38, 64);
-  font-size: 25px;
-  font-weight: 600;
-}
-
-li {
-  display: inline;
-  list-style: none;
-}
-li a {
+  font-size: 35px;
   color: white;
-  margin-left: 10px;
-  font-weight: 600;
-  background-color: rgb(9, 38, 64);
-  padding: 8px;
-  border-radius: 10px;
-  transition: 0.3s ease-out;
+  user-select: none;
 }
-li a:hover {
-  color: aqua;
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 40px;
 }
-.search {
-  width: 330px;
-  margin-left: 400px;
-}
-.srch {
-  font-family: "Times New Roman", Times, serif;
-  width: 200px;
-  height: 60px;
+.navigation .btnLogin-popup {
+  width: 130px;
+  height: 50px;
   background: transparent;
-  border: 2px solid red;
-  color: rgb(0, 0, 0);
   outline: none;
-  border-right: none;
-  font-size: 16px;
-  padding: 10px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 1s;
 }
-.btn {
-  width: 100px;
-  height: 60px;
-  border: 2px solid red;
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-left: none;
+.navigation .btnLogin-popup:hover {
+  background-color: white;
+  color: black;
 }
